@@ -1,0 +1,55 @@
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Navbar</a></li>
+    <li><a href="#">Display Notification</a></li>
+  </ul>
+  <div id="print-section">
+    <table class="table">
+      <thead class="black white-text">
+        <tr class="tbcolor"> 
+          <th scope="col">To Edit</th>
+          <th scope="col">Notification ID</th>
+          <th scope="col">Notification Type </th>
+          <th scope="col">Date Of Notification</th>
+          <th scope="col">Date Of Notification Complete </th>
+          <th scope="col">Description</th>
+          <th scope="col">Priority </th>
+          <th scope="col">Maintanance Plant</th>
+          <th scope="col">Equipment </th>
+          <th scope="col">Functional Location </th>
+          <th scope="col">Reporting Person </th>
+          <th scope="col">Group Counter</th>
+          <th scope="col">Key For Task List Group</th>
+          <th scope="col">Object Number </th>
+          <th scope="col">Malfunction Start </th>
+          <th scope="col">Malfunction End</th>
+          <th scope="col">Breakdown Indicator:</th> 
+          <th scope="col">Maintanance Plan</th>
+          <th scope="col">Maintanance Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let displaynotification of displaynotification">
+          <td><button mat-raised-button (click)="edit(displaynotification.QMNUM)">EDIT</button></td>
+          <td>{{displaynotification.QMNUM}}</td>
+          <td>{{displaynotification.QMART}}</td>
+          <td>{{displaynotification.QMDAT}}</td>
+          <td>{{displaynotification.QMDAB}}</td>
+          <td>{{displaynotification.QMTXT}}</td>
+          <td>{{displaynotification.PRIOK}}</td>
+          <td>{{displaynotification.SWERK}}</td>
+          <td>{{displaynotification.EQUNR}}</td>
+          <td>{{displaynotification.TPLNR}}</td>
+          <td>{{displaynotification.QMNAM}}</td>
+          <td>{{displaynotification.PLNAL}}</td>
+          <td>{{displaynotification.PLNNR}}</td>
+          <td>{{displaynotification.OBJNR}}</td>
+          <td>{{displaynotification.AUSVN}}</td>
+          <td>{{displaynotification.AUSBS}}</td>
+          <td>{{displaynotification.MSAUS}}</td>
+          <td>{{displaynotification.WARPL}}</td>
+          <td>{{displaynotification.WAPOS}}</td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,116 @@
+<h2 mat-dialog-title>Change Notification</h2>
+<form [formGroup]="editform" autocomplete="off">
+<div class="row"> 
+    <div class="leftside">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Notification ID</span>
+    </div>
+    <input type="text" formControlName="notificationid" class="form-control" placeholder="" aria-label="Notification ID" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Notification Type</span>
+    </div>
+    <input type="text" formControlName="notificationtype" class="form-control" placeholder="" aria-label="Notification Type" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Start Date</span>
+    </div>
+    <input type="text" formControlName="dateofnotification" class="form-control" placeholder="" aria-label="Start Date" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Completion Date</span>
+    </div>
+    <input type="text" formControlName="dateofnotificationcomplete" class="form-control" placeholder="" aria-label="End Date" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Priority</span>
+    </div>
+    <input type="text" formControlName="priority" class="form-control" placeholder="" aria-label="Priority" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Maintanance Plant</span>
+    </div>
+    <input type="text" formControlName="maintananceplant" class="form-control" placeholder="" aria-label="Maintanance Plant" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Equipment </span>
+    </div>
+    <input type="text" formControlName="equipmentnumber" class="form-control" placeholder="" aria-label="Equipment" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Functional location</span>
+    </div>
+    <input type="text" formControlName="functionallocation" class="form-control" placeholder="" aria-label="Functional location" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Reporting Person</span>
+    </div>
+    <input type="text" formControlName="reportingperson" class="form-control" placeholder="" aria-label="Reporting Person" aria-describedby="basic-addon1">
+  </div>
+</div>
+<div class="rightside">
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Group Counter</span>
+    </div>
+    <input type="text" formControlName="groupcenter" class="form-control" placeholder="" aria-label="Group Counter" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Task List</span>
+    </div>
+    <input type="text" formControlName="keyfortasklistgroup" class="form-control" placeholder="" aria-label="Task List" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Malfunction Start</span>
+    </div>
+    <input type="text" formControlName="malfunctionstart" class="form-control" placeholder="" aria-label="Malfunction Start" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Malfunction End</span>
+    </div>
+    <input type="text" formControlName="malfunctionend" class="form-control" placeholder="" aria-label="Malfunction End" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Breakdown Ind</span>
+    </div>
+    <input type="text" formControlName="breakdownindicator" class="form-control" placeholder="" aria-label="Breakdown Ind" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Maintanance Plan</span>
+    </div>
+    <input type="text" formControlName="maintananceplan" class="form-control" placeholder="" aria-label="MaintanancePlan" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Maintanance Item</span>
+    </div>
+    <input type="text" formControlName="maintananceitem" class="form-control" placeholder="" aria-label="MaintananceItem" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Description</span>
+    </div>
+    <input type="text" formControlName="shorttext" class="form-control" placeholder="" aria-label="Description" aria-describedby="basic-addon1">
+  </div>
+</div>
+</div>
+</form>
+<mat-dialog-actions >
+    <button mat-button (click)="save()">Save</button>
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

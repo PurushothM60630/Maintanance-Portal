@@ -1,0 +1,55 @@
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Navbar</a></li>
+    <li><a href="#">Display workorder</a></li>
+  </ul>
+  <div id="print-section">
+    <table class="table">
+      <thead class="black white-text">
+        <tr class="tbcolor"> 
+          <th scope="col">To Edit</th>
+          <th scope="col">Workorder Number</th>
+          <th scope="col">WorkOrder Type  </th>
+          <th scope="col">Created Date </th>
+          <th scope="col">Functional Location  </th>
+          <th scope="col">Equipment</th>
+          <th scope="col">Maintanance Plant</th>
+          <th scope="col">Notification No </th>
+          <th scope="col">Priority </th>
+          <th scope="col">Start Date </th>
+          <th scope="col">Finish Date </th>
+          <th scope="col">Responsible Person </th>
+          <th scope="col">Work Center </th>
+          <th scope="col">Sales Document Type</th>
+          <th scope="col">Maintanance Plan</th>
+          <th scope="col">Maintanance Item</th>
+          <th scope="col">Key For Task List Group</th> 
+          <th scope="col">Group Counter</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let displayworkorder of displayworkorder">
+          <td><button mat-raised-button (click)="edit(displayworkorder.AUFNR)">EDIT</button></td>
+          <td>{{displayworkorder.AUFNR}}</td>
+          <td>{{displayworkorder.AUART}}</td>
+          <td>{{displayworkorder.ERDAT}}</td>
+          <td>{{displayworkorder.TPLNR}}</td>
+          <td>{{displayworkorder.EQUNR}}</td>
+          <td>{{displayworkorder.SWERK}}</td>
+          <td>{{displayworkorder.QMNUM}}</td>
+          <td>{{displayworkorder.PRIOK}}</td>
+          <td>{{displayworkorder.GSTRP}}</td>
+          <td>{{displayworkorder.GLTRP}}</td>
+          <td>{{displayworkorder.ANING}}</td>
+          <td>{{displayworkorder.GEWRK}}</td>
+          <td>{{displayworkorder.AUTYP}}</td>
+          <td>{{displayworkorder.WARPL}}</td>
+          <td>{{displayworkorder.WAPOS}}</td>
+          <td>{{displayworkorder.PLNNR}}</td>
+          <td>{{displayworkorder.PLNAL}}</td>
+          <td>{{displayworkorder.KTEXT}}</td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>

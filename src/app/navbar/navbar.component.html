@@ -1,0 +1,43 @@
+<mat-toolbar id="mainToolbar" color="primary">
+    <mat-icon (click)="onToolbarMenuToggle()" id="toolbarMenu">menu</mat-icon>
+    Maintanance Portal
+    <span class="toolbar-spacer"></span>
+    <mat-icon class="toolbar-icon" (click)="logout()">logout</mat-icon>
+  </mat-toolbar>
+  
+  <mat-sidenav-container id="sidenavContainer" fullscreen>
+    <mat-sidenav mode="side" id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
+  
+      <mat-list id="menus">
+  
+        <mat-list-item>
+          <button class="menu-item" mat-flat-button [routerLink]="['../mnavbar/createnotification']">
+            <mat-icon>alarm</mat-icon>
+            Create Notification
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button [routerLink]="['../mnavbar/displaynotification']" class="menu-item" mat-flat-button>
+            <mat-icon>assignment</mat-icon> Display Notification
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button [routerLink]="['../mnavbar/createworkorder']" class="menu-item" mat-flat-button>
+            <mat-icon>assignment_turned_in</mat-icon> Create Work Order
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button [routerLink]="['../mnavbar/displayworkorder']" class="menu-item" mat-flat-button>
+            <mat-icon>receipt</mat-icon> Display WorkOrder
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }">
+      <!--  <div class = "progress-bar" *ngIf="_loginservice.isLoading | async " >
+          <mat-progress-bar color="grey" mode="indeterminate" value="40"></mat-progress-bar>
+        </div>  -->
+      <router-outlet> </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

@@ -1,0 +1,122 @@
+<h2 mat-dialog-title>Change Workorder</h2>
+<form [formGroup]="editform" autocomplete="off">
+<div class="row"> 
+    <div class="leftside">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Order No</span>
+    </div>
+    <input type="text" formControlName="orderno" class="form-control" placeholder="" aria-label="orderno" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Priority</span>
+    </div>
+    <input type="text" formControlName="priority" class="form-control" placeholder="" aria-label="priority" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Equipment </span>
+    </div>
+    <input type="text" formControlName="equipmentnumber" class="form-control" placeholder="" aria-label="equipmentnumber" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Notification No</span>
+    </div>
+    <input type="text" formControlName="notificationno" class="form-control" placeholder="" aria-label="notificationno" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Workcenter</span>
+    </div>
+    <input type="text" formControlName="workcenter" class="form-control" placeholder="" aria-label="workcenter" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Responsible Person</span>
+    </div>
+    <input type="text" formControlName="responsibleperson" class="form-control" placeholder="" aria-label="responsibleperson" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Maintanance Plan </span>
+    </div>
+    <input type="text" formControlName="maintananceplan" class="form-control" placeholder="" aria-label="maintananceplan" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Maintanance Item</span>
+    </div>
+    <input type="text" formControlName="maintananceitem" class="form-control" placeholder="" aria-label="maintananceitem" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">SalesDocument Type</span>
+    </div>
+    <input type="text" formControlName="salesdocumenttype" class="form-control" placeholder="" aria-label="salesdocumenttype" aria-describedby="basic-addon1">
+  </div>
+</div>
+<div class="rightside">
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Order Category</span>
+    </div>
+    <input type="text" formControlName="ordercategory" class="form-control" placeholder="" aria-label="ordercategory" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Created Date</span>
+    </div>
+    <input type="text" formControlName="createddate" class="form-control" placeholder="" aria-label="createddate" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Functional Location</span>
+    </div>
+    <input type="text" formControlName="functionallocation" class="form-control" placeholder="functionallocation" aria-label="" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Maintanance Plant</span>
+    </div>
+    <input type="text" formControlName="maintananceplant" class="form-control" placeholder="" aria-label="maintananceplant" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Start Date</span>
+    </div>
+    <input type="text" formControlName="startdate" class="form-control" placeholder="" aria-label="startdate" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Finish Date</span>
+    </div>
+    <input type="text" formControlName="finishdate" class="form-control" placeholder="" aria-label="finishdate" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Tasklist</span>
+    </div>
+    <input type="text" formControlName="keyfortasklistgroup" class="form-control" placeholder="" aria-label="keyfortasklistgroup" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Group counter</span>
+    </div>
+    <input type="text" formControlName="groupcenter" class="form-control" placeholder="" aria-label="groupcenter" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Description</span>
+    </div>
+    <input type="text" formControlName="generalname" class="form-control" placeholder="" aria-label="generalname" aria-describedby="basic-addon1">
+  </div>
+</div>
+</div>
+</form>
+<mat-dialog-actions >
+    <button mat-button (click)="save()">Save</button>
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

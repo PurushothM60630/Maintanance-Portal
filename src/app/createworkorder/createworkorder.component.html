@@ -1,0 +1,144 @@
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Navbar</a></li>
+    <li><a href="#">Create Workorder</a></li>
+  </ul>
+
+  
+    
+        <div class="card">
+            <div class="w-100 p-3">
+            <div class="card-header" >
+                <h1 class="card-title">Workorder Recording</h1>
+            </div>
+            
+            <div class="card-body">
+                <form [formGroup]="userform" autocomplete="off">
+                    <div class="row">
+                      <div class="col-md-6" >
+                        <div class="form-group">
+                            <label>Workorder Number :</label>
+                          <input type="text" formControlName="orderno"  placeholder="Workorder Number" class="form-control" id="AdminForm"  >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Workorder Type :</label>
+                          <input type="text" formControlName="salesdocumenttype" placeholder=" Work Order Type" class="form-control" >
+                        </div> 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Created Date :</label>
+                          <input type="text" formControlName="createddate" placeholder="Created Date" class="form-control" >
+                        </div> 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Functional Location :</label>
+                          <input type="text" formControlName="functionallocation" placeholder="Functional Location" class="form-control" >
+                        </div> 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Equipment :</label>
+                          <input type="text" formControlName="equipmentnumber" placeholder="Equipment" class="form-control" >
+                        </div> 
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Maintanance Plant :*</label>
+                          <input type="text" formControlName="maintananceplant" placeholder="Maintanance Plant" class="form-control" required >
+                        </div> 
+                      </div>
+                    </div>
+                    <hr style="width: auto;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Notification No (If Any) :</label>
+                              <input formControlName="notificationno" type="text" placeholder="Notification No"  class="form-control"  >
+                            </div>
+                          </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Priority :</label>
+                              <input formControlName="priority" type="text" placeholder="Priority"  class="form-control"  >
+                            </div>
+                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Start Date :</label>
+                              <input formControlName="startdate" type="text" placeholder="Start Date YYYY-MM-DD"  class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Finish Date :</label>
+                              <input formControlName="finishdate" type="text" placeholder="Finish Date YYYY-MM-DD"  class="form-control"  >
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: auto;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Responsible Person :</label>
+                              <input formControlName="responsibleperson" type="text" placeholder="Responsible Person" class="form-control" >
+                            </div>
+                          </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Work Center :</label>
+                              <input formControlName="workcenter" type="text" placeholder="work Center" class="form-control" >
+                            </div>
+                          </div>
+                        <!--  <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Sales Document Type :</label>
+                              <input formControlName="salesdocumenttype" type="text" placeholder="Sales Document Type" class="form-control" >
+                            </div>
+                          </div>  -->
+                    </div>
+                    <hr style="width: auto;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Maintanance Plan :</label>
+                              <input formControlName="maintananceplan" type="text" placeholder="Maintanance plan" class="form-control" >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Maintanance Item :</label>
+                              <input formControlName="maintananceitem" type="text" placeholder="Maintanance Item" class="form-control" >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Key For Task List Group :</label>
+                              <input formControlName="keyfortasklistgroup" type="text" placeholder="key for tasklist group" class="form-control" >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Group Counter :</label>
+                              <input formControlName="groupcenter" type="text" placeholder="Group Counter" class="form-control" >
+                            </div>
+                          </div>
+                    </div>
+                        <hr style="width: auto;">
+                        <label>Description :</label>
+                            <textarea formControlName="generalname" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description" ></textarea>
+                        <hr style="width: auto;">      
+                   <div class="row">
+                      <div class="text-center">
+                        <button mat-raised-button (click) =" createnewnotification() " >Create New Notification</button>
+                       
+                      </div>
+                   </div>
+                  </form>
+            </div>
+        </div>
+        </div>
+    
